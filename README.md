@@ -1,5 +1,6 @@
 # Synthetic images
 In this project, synthetic images are created with the flip library.
+![image](https://github.com/xica369/synthetic_images_with_flip/blob/main/synthetic_images/image.jpg)
 
 ## Requirements
 - [Python 3.7](https://www.python.org/downloads/ "Python 3.7")
