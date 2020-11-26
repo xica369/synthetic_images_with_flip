@@ -17,7 +17,7 @@ Generate dataset with synthetic data
 
 
 def generate_data(n_samples=5, n_objects=3, objects_pattern="data/objects/*",
-                  backgronds_pattern="data/Casting_Similar_95/*", show=False,
+                  backgrounds_pattern="data/Casting_Similar_95/*", show=False,
                   output_dir="data/noisy/noisy_img"):
     """
     Function that creates and setups the global variables and
@@ -206,7 +206,7 @@ def create_child(path):
 if __name__ == "__main__":
     generate_data(n_samples=1,
                   n_objects=4,
-                  backgronds_pattern="backgrounds/*",
+                  backgrounds_pattern="backgrounds/*",
                   objects_pattern="objects/*",
                   output_dir="synthetic_images",
                   show=False)
