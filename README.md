@@ -20,12 +20,12 @@ generate_data(n_samples=1,
               output_dir="synthetic_images",
               show=False)
 ```
-**n_samples:** number of new images to create for each background
-**n_objects:** object number to place in each new image
-**backgrounds_pattern:** path where are the images to use as background
-**objects_pattern:** path where are the images to use as objects
-**output_dir:** path where the generated images will be saved
-**show:** if True it shows some images created else they are not shown
+- **n_samples:** number of new images to create for each background
+- **n_objects:** object number to place in each new image
+- **backgrounds_pattern:** path where are the images to use as background
+- **objects_pattern:** path where are the images to use as objects
+- **output_dir:** path where the generated images will be saved
+- **show:** if True it shows some images created else they are not shown
 
 ## Author
 [**Carolina Andrade**](https://www.linkedin.com/in/xicav369/)
