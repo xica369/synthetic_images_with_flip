@@ -23,7 +23,7 @@ generate_data(n_samples=1,
 ```
 - 
   - **n_samples:** number of new images to create for each background
-  - **n_objects:** object number to place in each new image
+  - **n_objects:** number object to place in each new image. It can be an integer or a tuple. For example 3 -> will always put 3 objects, (2, 5) -> will put between 2 and 5 objects in each image
   - **backgrounds_pattern:** path where are the images to use as background
   - **objects_pattern:** path where are the images to use as objects
   - **output_dir:** path where the generated images will be saved
