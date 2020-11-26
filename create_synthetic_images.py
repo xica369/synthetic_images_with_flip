@@ -42,7 +42,7 @@ def generate_data(n_samples=5, n_objects=3, objects_pattern="data/objects/*",
     # Setup global variables
     SHOW = show
     N_SAMPLES = n_samples
-    BACKGROUNDS_PATTERN = backgronds_pattern
+    BACKGROUNDS_PATTERN = backgrounds_pattern
     OBJECTS_PATTERN = objects_pattern
     OUTPUT_DIR = output_dir
     N_OBJECTS = n_objects
