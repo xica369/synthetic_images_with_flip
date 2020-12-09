@@ -141,7 +141,7 @@ def create_element(objects_paths, background_path):
 
     # get background
     background_image = flip.utils.inv_channels(
-        cv2.imread(background_path, cv2.IMREAD_UNCHANGED,)
+        cv2.imread(background_path, cv2.IMREAD_UNCHANGED)
     )
 
     # create new element
@@ -173,7 +173,11 @@ def create_element(objects_paths, background_path):
                 mode='percentage'
             ),            
             flip.transformers.domain_randomization.Draw(),
-            flip.transformers.io.SaveImage(OUTPUT_DIR, name)
+            flip.transformers.io.SaveImage(OUTPUT_DIR, name),
+            flip.transformers.labeler.CreateBoundingBoxes(),
+            flip.transformers.io.CreateJson(OUTPUT_DIR, name),
+            flip.transformers.io.CreateCSV(OUTPUT_DIR, name),
+            flip.transformers.io.CreatePascalVoc(OUTPUT_DIR, name)
         ]
     )
 
