@@ -35,6 +35,15 @@ generate_data(n_samples=1,
 $ python ./create_synthetic_images.py
 ```
 - The images created will be saved in the fodel */synthetic_images*
+- If in addition to the synthetic images you also want to have the labeling files to train a YOLO model, you can execute the `create_synthetic_images_and_labeling.py` file which is like the `create_synthetic_images.py` file with an extra function that allows you to create the txt files.  From the repository root run this command
+```python
+$ python ./create_synthetic_images_and_labeling.py
+```
+For each synthetic image, a labeling file is created where each row is the information of each object in the image with the following format:
+`class x_center y_center width height
+`
+for example:
+`0 0.697266 0.503472 0.099609 0.222222`
 
 ## Author
 [**Carolina Andrade**](https://www.linkedin.com/in/xicav369/)
